@@ -1,37 +1,20 @@
-Preinstalled Local SLMs List
+Generic Guideline for SSL Error issue in Al Lab machine:
 
-Llama-3.2-3b-it (SLM - Chat Model)
+To Resolve SSL Error:
 
-Gemma-3-4b-it (SLM - Chat Model)
+1. Create a "token" folder which you are using in the code above.
 
-Qwen-2.5.1-coder-it (SLM - Chat Model)
+2. Download tiktoken tokenizer from https://openaipublic.blob.core.windows.net/enco dings/cl100k base.tiktoken. Put this downloaded file in to the "token" folder.
 
-Deepseek-r1 (SLM - Reasoning Model)
+Rename the downloaded file to SHA1 9b5ad71b2ce5302211f9c61530b329a4922fc6a4 remove the token extension.
 
-Gte-large (SLM - Embedding Model)
+3. Rename the downloaded file to 9b5ad71b2ce5302211f9c61530b329a4922fc6a4 and remove the token extension.
 
-List of currently available Models
+To Resolve SSL Error for RAG, while using OpenAlEmbedings:
 
-azure/genailab-maas-gpt-35-turbo
+1. Create a "token" folder which you are using in the code above.
 
-azure/genailab-maas-gpt-40
+2. Download tiktoken tokenizer from https://openaipublic.blob.core.windows.net /encodings/cl100k base.tiktoken
+3. Put this downloaded file in to the "token" folder
 
-azure/genailab-maas-gpt-40-mini
-
-azure/genailab-maas-text-embedding-3-large
-
-azure/genailab-maas-whisper
-
-azure_ai/genailab-maas-DeepSeek-R1
-
-azure_ai/genailab-maas-DeepSeek-V3-0324
-
-azure_ai/genailab-maas-Llama-3.2-90B-Vision-Instruct
-
-azure_ai/genailab-maas-Llama-3.3-70B-Instruct
-
-azure_ai/genailab-maas-Llama-4-Maverick-17B-128E-Instruct-FP8
-
-azure_ai/genailab-maas-Phi-3.5-vision-instruct
-
-azure_ai/genailab-maas-Phi-4-reasoning
+4. Rename the downloaded file to 9b5ad71b2ce5302211f9c61530b329a4922f c6a4 and remove the .token extension.
