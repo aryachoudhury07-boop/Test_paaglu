@@ -1,0 +1,26 @@
+from langchain.cache import InMemoryCache from langchain.chat_models import ChatOpenAl from langchain.schema import PromptValue import langchain import streamlit as st
+
+# Enable LangChain caching langchain.Ilm_cache = InMemoryCache()
+
+# Create the LLM
+
+Ilm = ChatOpenAl(model _name="gpt-3.5-turbo", temperature=0.7)
+
+#Define your prompt context = "Microservices are loosely coupled services." query = "How do microservices help in software development?" prompt = f"Context: (context) AnQuestion: (query)\nAnswer"
+# Wrap prompt in LangChain's PromptValue prompt_value =
+
+PromptValue(text=prompt)
+
+# Check cache manually cached_response = langchain.Ilm_ cache.lookup(prompt_value)
+
+if cached_response:
+
+st.info(" LangChain Cache Hit: Returning cached response.")
+
+response_text = cached_response else:
+
+st.warning(" LangChain Cache Miss: Calling LLM.") response_text = Ilm.invoke(prompt) update(prompt_value, response_text)
+
+langchain.llm_cache.
+
+# Display the result st,subheader("Generated Answer") st.write(response_text)
