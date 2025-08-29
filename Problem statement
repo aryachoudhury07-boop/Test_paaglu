@@ -1,0 +1,25 @@
+Title name:
+
+Life Sciences Research Paper Abstract Summarizer
+
+Problem Statement:
+
+Researchers in life sciences need quick summaries of lengthy research papers to stay updated, but reading full papers is time-consuming.
+
+Steps:
+
+Use a Large Language Model to process research paper abstracts or full texts.
+
+Develop an Al agent that generates concise summaries highlighting key findings.
+
+Format summaries for easy reading and sharing.
+
+Support batch processing of multiple papers.
+
+Data Requirements:
+
+Research paper abstracts or full texts from open-access life sciences journals in text format.
+
+Expected Output:
+
+Concise, structured summaries of research papers in text format.
